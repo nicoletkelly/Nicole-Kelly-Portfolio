@@ -1,0 +1,1 @@
+function animate({3s, grow, 3s}) 
