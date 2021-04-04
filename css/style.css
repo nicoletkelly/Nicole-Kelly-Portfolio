@@ -5,9 +5,19 @@ body {
 }
 
 h1 {
-    color: white;
+    color: #e424da;
+    -webkit-text-stroke: 3px  #ff9431;
     font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 72pt;
+    animation: fade 8s infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+    from { color: #e424da }
+    to   { color: #333 }
+    from {-webkit-text-stroke: 3px  #ff9431}
+    to {-webkit-text-stroke: 4px  #e424da}
 }
 
 h2 {
@@ -27,30 +37,29 @@ hr {
     border: none;
     height: 4px;
     width: 80%;
-   
-}
-.trans--grow{
-    -webkit-transition: all 2s ease-in-out; /* For Safari 3.1 to 6.0 */
-    transition: all 2s  ease-in-out;
-    width : 0;
 }
 
-.grow{
-width:100%;
+.bg-img {
+    background: url("../Images/vectorHead.png");
+    background-position: 0 -99px;
+    width: 100%;
+    background-size: 100% 400px;
+    height: 400px;
+    background-repeat: no-repeat;
 }
 
-.line-color-change{
-background-color: rgb(0, 150, 250);
-}
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    padding: 14px 16px;
+.container {
+    margin: 20px;
+    width: auto;
 }
 
 .items {
     float: right;
+    padding-top: 20px;
+}
+
+.topnav {
+    overflow: visible;
 }
 
 .topnav a {
@@ -71,7 +80,7 @@ background-color: rgb(0, 150, 250);
 /* Add a color to the active/current link */
 
 .topnav a.active {
-    border-bottom: 3px solid #e424da;
+    border-bottom: 2px solid #e424da;
     color: white;
 }
 
@@ -81,23 +90,62 @@ background-color: rgb(0, 150, 250);
     float: left;
     font-family: fantasy;
     font-size: 1rem;
+    padding-top: 20px;
 }
 
 .tagline {
     color: white;
+    font-size: 1.2rem;
 }
 
-.jumbotron {
-    max-width: 100%;
-    padding: 100px 200px;
+.parentContainer {
+    display: flex;
+    margin-top: -10vh;
+    flex-direction: row;
     background-color: #333;
+    padding: 15px;
+}
+
+.flexChild {
+    background-color: #333;
+    padding: 10px;
+    margin-left: 250px;
+    padding-top: 0vw;
+    height: auto;
+}
+
+.flexChild2 {
+    background-color: #333;
+    padding-top: 59px;
+    margin: auto;
+    height: auto;
+    flex-basis: 30%;
+}
+
+.btn {
+    color: white;
+    background-color: #333;
+    border: solid #e424da;;
+    border-radius: 4px;
+    padding: 14px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ff9431;
+    color: #333;
+    color: white;
+    font-weight: bold;
+ 
 }
 
 .sectionTitle {
-    margin-top: 50px;
+    margin-top: 5vh;
     margin-left: 200px;
-    padding-bottom: 50px;
-}
+  
+    }
 
 .flex-container {
     display: flex;
@@ -105,10 +153,18 @@ background-color: rgb(0, 150, 250);
     max-height: 150px;
     justify-content: space-around;
     text-align: center;
-    padding: 5px;
-    padding-bottom: 30vh;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
 }
-
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    max-height: 150px;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: -30vh;
+}
 .item {
     width: 200px;
     height: 200px;
@@ -135,13 +191,21 @@ label {
 /* Style the submit button */
 
 input[type=submit] {
-    background-color: #e424da;
     color: white;
-    padding: 12px 20px;
-    border: none;
+    background-color: #333;
+    border: solid #e424da;;
     border-radius: 4px;
+    padding: 14px 28px;
+    font-size: 16px;
     cursor: pointer;
     float: right;
+}
+input[type=submit]:hover {
+    background: #ff9431;
+    color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 13px 27px;
 }
 
 /* Style the container */
@@ -190,9 +254,16 @@ input[type=submit] {
     flex: 2;
 }
 
+.bg-img2 {  
+    background: url("../Images/vectorFooter.png");
+    width: 100%;
+    background-position:bottom;
+    background-size: 100% 200px;
+    height: 500px;
+    background-repeat: no-repeat;
 
-
-
+}
+/*hide footer
 .footer {
     display: block;
     bottom: 0;
@@ -202,4 +273,5 @@ input[type=submit] {
     background-color: #333;
     text-align: center;
     padding-top: 22vh;
-}
+    color: white;
+}*/
