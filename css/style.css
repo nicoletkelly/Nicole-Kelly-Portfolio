@@ -5,8 +5,8 @@ body {
 }
 
 h1 {
-    color: #e424da;
-    -webkit-text-stroke: 3px  #ff9431;
+    color: #BB09AF;
+    -webkit-text-stroke: 3px  #ff9531b0;
     font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 72pt;
     animation: fade 8s infinite;
@@ -14,10 +14,10 @@ h1 {
 }
 
 @keyframes fade {
-    from { color: #e424da }
+    from { color: #BB09AF }
     to   { color: #333 }
-    from {-webkit-text-stroke: 3px  #ff9431}
-    to {-webkit-text-stroke: 4px  #e424da}
+    from {-webkit-text-stroke: 3px  #ff9531b0}
+    to {-webkit-text-stroke: 4px  #BB09AF}
 }
 
 h2 {
@@ -141,6 +141,7 @@ hr {
  
 }
 
+
 .sectionTitle {
     margin-top: 5vh;
     margin-left: 200px;
@@ -166,8 +167,8 @@ hr {
     padding-bottom: -30vh;
 }
 .item {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 /* Style inputs, select elements and textareas */
@@ -241,13 +242,14 @@ input[type=submit]:hover {
     clear: both;
 }
 
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
-    }
+        }
 }
 
 .img-container {
