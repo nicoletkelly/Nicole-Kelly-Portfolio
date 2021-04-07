@@ -10,6 +10,7 @@ h1 {
     font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 72pt;
     animation: fade 8s infinite;
+    animation-direction: alternate-reverse;
     transition-timing-function: ease-in-out;
 }
 
@@ -49,8 +50,7 @@ hr {
 }
 
 .container {
-    margin: 20px;
-    width: auto;
+     width: auto;
 }
 
 .items {
@@ -139,6 +139,13 @@ hr {
     color: white;
     font-weight: bold;
  
+}
+
+.btn a:visited {
+    color: white
+}
+.btn a {
+    color: white
 }
 
 
